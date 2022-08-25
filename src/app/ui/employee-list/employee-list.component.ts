@@ -4,6 +4,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 import { EmployeeModel } from '../../model/employee.model';
 
 @Component({
@@ -13,5 +14,8 @@ import { EmployeeModel } from '../../model/employee.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeListComponent {
-  data$: Observable<EmployeeModel[] | null> = of(null);
+  data$: Observable<EmployeeModel[] | null> = this._client.get<EmployeeModel[]>(
+    'assets/data/employees.json'
+  );
+  constructor(private _client: HttpClient) {}
 }
