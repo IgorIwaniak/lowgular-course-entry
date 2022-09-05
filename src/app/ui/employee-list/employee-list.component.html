@@ -4,7 +4,10 @@
   <li *ngFor="let employee of data">{{ employee.id }}: {{ employee.name }} {{ employee.email }}
     <img [src]="employee.image" alt="UPS" />
     </li>
-
 </ul>
 
 <ng-template #empty> There is no data </ng-template>
+
+<ul>
+  <li *ngFor="let employee of data">{{ employee.name }}</li>
+</ul>
