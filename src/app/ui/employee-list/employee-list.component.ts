@@ -3,9 +3,9 @@ import {
   Component,
   ViewEncapsulation,
 } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { EmployeeModel } from '../../model/employee.model';
+import { EmployeeService } from '../../services/employee.service';
 
 @Component({
   selector: 'employee-list',
@@ -14,10 +14,7 @@ import { EmployeeModel } from '../../model/employee.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EmployeeListComponent {
-  title: string = 'Tekst który pojawi się w HTML';
-  data$: Observable<EmployeeModel[] | null> = this._client.get<EmployeeModel[]>(
-    'assets/data/employees.json'
-  );
-  data = [{ name: 'Jacek' }, { name: 'Wojtek' }];
-  constructor(private _client: HttpClient) {}
+  title: string = '';
+  data$: Observable<EmployeeModel[] | null> = this._employeeService.getAll();
+  constructor(private _employeeService: EmployeeService) {}
 }
