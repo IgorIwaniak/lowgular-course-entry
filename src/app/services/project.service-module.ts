@@ -4,8 +4,7 @@ import { ProjectService } from './project.service';
 @NgModule({
   imports: [],
   declarations: [],
-  providers: [ProjectService],
-  exports: []
+  providers: [ProjectService, ProjectService],
+  exports: [],
 })
-export class ProjectServiceModule {
-}
+export class ProjectServiceModule {}

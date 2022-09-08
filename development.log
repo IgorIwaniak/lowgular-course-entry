@@ -4477,3 +4477,103 @@
 	"level": "info",
 	"message": "[API] Response ok: entity/actions"
 }
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/app.module.ts",
+		"position": 657
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "D:/Projektyprogr/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "BTpzo1l42tP7PabeueYwkFzhZTl2",
+			"correlationId": "MAnkz4XgyA",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/app.module.ts",
+		"position": 657
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[error] [API]: Error Entity not found for suffix: module: {
+	"loggerData": {
+		"action": "entity/actions",
+		"params": {
+			"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/app.module.ts",
+			"position": 657
+		},
+		"context": {
+			"workspace": {
+				"rootPath": "D:/Projektyprogr/lowgular-course-entry"
+			},
+			"userContext": {
+				"id": "BTpzo1l42tP7PabeueYwkFzhZTl2",
+				"correlationId": "MAnkz4XgyA",
+				"logEnvId": "development"
+			}
+		}
+	},
+	"error": {},
+	"stack": "Error: Entity not found for suffix: module\n    at getEntityActions (C:\\Users\\48787\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:8904:15)\n    at async callQueryCli (C:\\Users\\48787\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:10144:20)\n    at async callHandler (C:\\Users\\48787\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:2601:27)",
+	"level": "error",
+	"message": "[API]: Error Entity not found for suffix: module"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/app.module.ts",
+		"position": 893
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "D:/Projektyprogr/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "BTpzo1l42tP7PabeueYwkFzhZTl2",
+			"correlationId": "SxITZDZENI",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/app.module.ts",
+		"position": 893
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[error] [API]: Error Entity not found for suffix: module: {
+	"loggerData": {
+		"action": "entity/actions",
+		"params": {
+			"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/app.module.ts",
+			"position": 893
+		},
+		"context": {
+			"workspace": {
+				"rootPath": "D:/Projektyprogr/lowgular-course-entry"
+			},
+			"userContext": {
+				"id": "BTpzo1l42tP7PabeueYwkFzhZTl2",
+				"correlationId": "SxITZDZENI",
+				"logEnvId": "development"
+			}
+		}
+	},
+	"error": {},
+	"stack": "Error: Entity not found for suffix: module\n    at getEntityActions (C:\\Users\\48787\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:8904:15)\n    at async callQueryCli (C:\\Users\\48787\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:10144:20)\n    at async callHandler (C:\\Users\\48787\\AppData\\Roaming\\JetBrains\\WebStorm2022.2\\plugins\\LowgularJPlugin\\cli\\main.js:2601:27)",
+	"level": "error",
+	"message": "[API]: Error Entity not found for suffix: module"
+}

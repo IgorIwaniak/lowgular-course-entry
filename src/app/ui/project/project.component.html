@@ -1,8 +1,31 @@
-<h1>Project list</h1>
-<ul *ngIf="data$ | async as data; else empty">
-<li *ngFor="let employee of data">{{ employee.id }}: {{ employee.name }}
-  {{ employee.owner}} {{employee.description}}
-</li>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: lightgrey;
+      color: black;
+    }
+
+    h1 {
+      background-color: black;
+      color: white;
+      font-family: Arial;
+
+    }
+
+    div {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<h1>Project List</h1>
+<ul *ngIf="data$ | async as data; ">
+<li *ngFor="let project of data">{{ project.id }}: {{ project.name }} {{ project.email }}
+  {{ project.owner}}
 </ul>
 
-<ng-template #empty> There is no data </ng-template>
+
+

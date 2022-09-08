@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: lightgrey;
+      color: black;
+    }
+
+    h1 {
+      background-color: black;
+      color: white;
+      font-family: Arial;
+    }
+
+    div {
+      background-color: lightgrey;
+      color: white;
+    }
+  </style>
+</head>
+<body>
 <h1>Employee list</h1>
 <h2>{{ title }}</h2>
 <ul *ngIf="data$ | async as data; else empty">

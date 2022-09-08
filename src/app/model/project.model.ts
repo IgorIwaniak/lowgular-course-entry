@@ -3,4 +3,6 @@ export interface ProjectModel {
   readonly name: string;
   readonly owner: string;
   readonly description: string;
+  readonly email: string;
+  readonly image: string;
 }
