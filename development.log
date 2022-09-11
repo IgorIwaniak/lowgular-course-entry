@@ -5782,3 +5782,218 @@
 	"level": "info",
 	"message": "[API] Response ok: entity/actions"
 }
+[info] [API] Request for projects/list: {
+	"action": "projects/list",
+	"params": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/ui/employees-faces"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "D:/Projektyprogr/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "BTpzo1l42tP7PabeueYwkFzhZTl2",
+			"correlationId": "yJGFbgYIiD",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for projects/list"
+}
+[info] [CLI] Calling Query projects/list: {
+	"funcParams": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/ui/employees-faces"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query projects/list"
+}
+[info] [CLI] Called Query projects/list: {
+	"result": {
+		"clickedProject": {
+			"name": "lowgular-course-entry",
+			"path": "D:/Projektyprogr/lowgular-course-entry/src/app"
+		},
+		"otherProjects": []
+	},
+	"level": "info",
+	"message": "[CLI] Called Query projects/list"
+}
+[info] [API] Response ok: projects/list: {
+	"result": {
+		"clickedProject": {
+			"name": "lowgular-course-entry",
+			"path": "D:/Projektyprogr/lowgular-course-entry/src/app"
+		},
+		"otherProjects": []
+	},
+	"level": "info",
+	"message": "[API] Response ok: projects/list"
+}
+[info] [API] Request for entity/list: {
+	"action": "entity/list",
+	"params": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "D:/Projektyprogr/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "BTpzo1l42tP7PabeueYwkFzhZTl2",
+			"correlationId": "yJGFbgYIiD",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/list"
+}
+[info] [CLI] Calling Query entity/list: {
+	"funcParams": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/list"
+}
+[info] [CLI] Called Query entity/list: {
+	"result": [
+		{
+			"id": "component",
+			"type": "ANGULAR_COMPONENT",
+			"suffix": "Component",
+			"folder": "ui/$name$",
+			"insideOf": "App",
+			"config": {
+				"stylesExtension": "none",
+				"viewEncapsulation": "Emulated",
+				"selector": "generated",
+				"changeDetectionStrategy": "OnPush"
+			}
+		},
+		{
+			"id": "dataService",
+			"type": "SERVICE",
+			"suffix": "Service",
+			"folder": "services",
+			"insideOf": "App"
+		},
+		{
+			"id": "model",
+			"type": "DATA_STRUCTURE",
+			"suffix": "Model",
+			"folder": "model",
+			"insideOf": "App"
+		},
+		{
+			"id": "response",
+			"type": "DATA_STRUCTURE",
+			"suffix": "Response",
+			"folder": "services",
+			"insideOf": "App"
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query entity/list"
+}
+[info] [API] Response ok: entity/list: {
+	"result": [
+		{
+			"id": "component",
+			"type": "ANGULAR_COMPONENT",
+			"suffix": "Component",
+			"folder": "ui/$name$",
+			"insideOf": "App",
+			"config": {
+				"stylesExtension": "none",
+				"viewEncapsulation": "Emulated",
+				"selector": "generated",
+				"changeDetectionStrategy": "OnPush"
+			}
+		},
+		{
+			"id": "dataService",
+			"type": "SERVICE",
+			"suffix": "Service",
+			"folder": "services",
+			"insideOf": "App"
+		},
+		{
+			"id": "model",
+			"type": "DATA_STRUCTURE",
+			"suffix": "Model",
+			"folder": "model",
+			"insideOf": "App"
+		},
+		{
+			"id": "response",
+			"type": "DATA_STRUCTURE",
+			"suffix": "Response",
+			"folder": "services",
+			"insideOf": "App"
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: entity/list"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+		"position": 776
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "D:/Projektyprogr/lowgular-course-entry"
+		},
+		"userContext": {
+			"id": "BTpzo1l42tP7PabeueYwkFzhZTl2",
+			"correlationId": "MiZEu2mx3s",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "D:/Projektyprogr/lowgular-course-entry/src/app/ui/employee-form/employee-form.component.ts",
+		"position": 776
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": [
+		{
+			"id": "ADD_RXJS",
+			"label": "Add RxJS",
+			"context": {
+				"parentMethod": "onButtonClicked"
+			}
+		},
+		{
+			"id": "INJECT",
+			"label": "Inject",
+			"context": {}
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": [
+		{
+			"id": "ADD_RXJS",
+			"label": "Add RxJS",
+			"context": {
+				"parentMethod": "onButtonClicked"
+			}
+		},
+		{
+			"id": "INJECT",
+			"label": "Inject",
+			"context": {}
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
