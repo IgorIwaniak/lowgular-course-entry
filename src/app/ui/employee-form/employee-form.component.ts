@@ -4,6 +4,8 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { FormControl, FormGroup, Validator, Validators } from '@angular/forms';
+import { EmployeeService } from '../../services/employee.service';
+import { CreateEmployeeModel } from '../../model/create-employee.model';
 
 @Component({
   selector: 'app-employee-form',
@@ -18,6 +20,8 @@ export class EmployeeFormComponent {
     salary: new FormControl(null, [Validators.required]),
   });
 
+  constructor(private _employeeService: EmployeeService) {}
+
   onButtonClicked(form: { name: string; age: string; salary: string }) {
     alert(
       'user was successfully added to the database  ' +
@@ -30,5 +34,9 @@ export class EmployeeFormComponent {
     );
   }
 
-  onEmployeeFormSubmitted(employeeForm: FormGroup): void {}
+  onFormSubmitted(form: CreateEmployeeModel) {
+    this._employeeService
+      .create({ name: form.name, age: form.age, salary: form.salary })
+      .subscribe();
+  }
 }
