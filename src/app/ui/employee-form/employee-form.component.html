@@ -1,9 +1,11 @@
-<h1>Add new employee</h1>
+<p class="text-primary">Add new employee</p>
+<div class="shadow-lg p-3 mb-5 bg-body rounded"></div>
 <form [formGroup]="employeeForm" (ngSubmit)="onFormSubmitted(employeeForm.value)">
   <input type="text" [disabled]="employeeForm.invalid" value formControlName="name" placeholder="Name">
   <input type="number" [disabled]="employeeForm.invalid" value formControlName="age" placeholder="Age">
   <input type="text" [disabled]="employeeForm.invalid" value formControlName="salary" placeholder="Salary">
   <input type="submit" [disabled]="employeeForm.invalid" value="Submit">
+
 </form>
 
 Your new employee:{{ employeeForm.value.name }}, age: {{ employeeForm.value.age}} with salary {{ employeeForm.value.salary}} will be added to the system
