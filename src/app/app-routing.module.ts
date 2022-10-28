@@ -5,6 +5,8 @@ import { EmployeeFormComponent } from './ui/employee-form/employee-form.componen
 import { EmployeeListComponentModule } from './ui/employee-list/employee-list.component-module';
 import { EmployeeServiceModule } from './services/employee.service-module';
 import { EmployeeFormComponentModule } from './ui/employee-form/employee-form.component-module';
+import { FooterComponentModule } from './ui/footer/footer.component-module';
+import { NavbarComponentModule } from './ui/navbar/navbar.component-module';
 
 const routes: Routes = [
   { path: 'employee-list', component: EmployeeListComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
     EmployeeListComponentModule,
     EmployeeServiceModule,
     EmployeeFormComponentModule,
+    FooterComponentModule,
+    NavbarComponentModule,
   ],
   exports: [RouterModule],
 })
