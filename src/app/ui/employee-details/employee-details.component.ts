@@ -15,6 +15,8 @@ import { EmployeeDetailsParamsModel } from '../../model/employee-details-params.
 })
 export class EmployeeDetailsComponent {
   readonly params$: Observable<EmployeeDetailsParamsModel> =
-    this._activatedRoute.params.pipe(map((params) => ({ id: params[`id`] })));
+    this._activatedRoute.params.pipe(
+      map((params) => ({ id: params[`id`], name: params['name'] }))
+    );
   constructor(private _activatedRoute: ActivatedRoute) {}
 }

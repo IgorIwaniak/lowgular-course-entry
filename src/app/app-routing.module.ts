@@ -13,7 +13,7 @@ import { EmployeeDetailsComponentModule } from './ui/employee-details/employee-d
 const routes: Routes = [
   { path: 'employee-list', component: EmployeeListComponent },
   { path: 'create-employee', component: EmployeeFormComponent },
-  { path: 'employee-details/:id', component: EmployeeDetailsComponent }
+  { path: 'employee-details/:id/:name', component: EmployeeDetailsComponent },
 ];
 
 @NgModule({
@@ -24,8 +24,8 @@ const routes: Routes = [
     EmployeeFormComponentModule,
     FooterComponentModule,
     NavbarComponentModule,
-    EmployeeDetailsComponentModule
+    EmployeeDetailsComponentModule,
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
